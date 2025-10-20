@@ -65,3 +65,6 @@ Your array:
 ]
 Your max number from array: 89
 ```
+
+## Możliwe inne rozwiązania
+W pliku index.ts została również zakomentowana funkcja getItemsMaxNumber z wersją rozwiązania korzystająca z funkcji wyższego rzędu (map i filter)
