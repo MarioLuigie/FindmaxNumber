@@ -4,41 +4,42 @@ Projekt w JS z uzyciem TS w celu kontrolowania typów danych. W pierwszej kolejn
 
 ## Struktura projektu
 
-- `/ZADANIE JS`
-  - `/dist` - skompilowany kod JavaScript (wynik z `tsc`)
-  - `/src` - kod źródłowy TypeScript
-    - `/lib` - logika typów i modeli
-      - `/types.ts` - typy TypeScript: `Item`, `Items`
-    - `/utils` - pliki pomocnicze / generatory
-      - `/seed.ts` - funkcja `seed()` generująca losowe obiekty `Item` w tablicy
-    - `/index.ts` - główny plik uruchamiający funkcję `getItemsMaxNumber()`
-  - `/package.json`
-  - `/tsconfig.json`
-  - `/README.md`
-
+-  `/ZADANIE JS`
+   -  `/dist` - skompilowany kod JavaScript (wynik z `tsc`)
+   -  `/src` - kod źródłowy TypeScript
+      -  `/lib` - logika typów i modeli
+         -  `/types.ts` - typy TypeScript: `Item`, `Items`
+      -  `/utils` - pliki pomocnicze / generatory
+         -  `/seed.ts` - funkcja `seed()` generująca losowe obiekty `Item` w tablicy
+      -  `/index.ts` - główny plik uruchamiający funkcję `getItemsMaxNumber()`
+   -  `/package.json`
+   -  `/tsconfig.json`
+   -  `/README.md`
 
 ## Pliki
 
-- types.ts – typy TypeScript:
+-  types.ts – typy TypeScript:
 
-  Item – obiekt z polem name: string
+   Item – obiekt z polem name: string
 
-  Items – tablica obiektów typu Item
+   Items – tablica obiektów typu Item
 
-- seed.ts – generuje losową tablicę obiektów Item na podstawie klasy Item,
+-  seed.ts – generuje losową tablicę obiektów Item na podstawie klasy Item,
 
-- index.ts – importuje seed i typy, zawiera funkcję getItemsMaxNumber(items: Items), która po wywołaniu:
+-  index.ts – importuje seed i typy, zawiera funkcję getItemsMaxNumber(items: Items), która po wywołaniu:
 
-  - iteruje przez tablicę obiektów
-  - wyciąga liczbę z pola name
-  - zwraca największą liczbę
+   -  iteruje przez tablicę obiektów
+   -  wyciąga liczbę z pola name
+   -  zwraca największą liczbę
 
 ## Przykład użycia:
+
 console.log('Your max number from array:', getItemsMaxNumber(seed(5)));
 
 ## Uruchomienie projektu
+
 ```
-  1. Zainstaluj Node.js 
+  1. Zainstaluj Node.js
 
   2. Zainstaluj TypeScript:
      npm install -g typescript
@@ -55,7 +56,7 @@ W konsoli/terminalu zobaczą państwo tablicę wygenerowanych obiektów oraz naj
 ## Przykładowy wynik
 
 ```
-Your array: 
+Your array:
 [
   { name: 'item 23' },
   { name: 'item 7' },
@@ -67,4 +68,5 @@ Your max number from array: 89
 ```
 
 ## Możliwe inne rozwiązania
-W pliku index.ts została również zakomentowana funkcja getItemsMaxNumber z wersją rozwiązania korzystająca z funkcji wyższego rzędu (map i filter)
+
+W pliku index.ts została również zakomentowana funkcja getItemsMaxNumber z wersją rozwiązania nr 2 korzystająca z funkcji wyższego rzędu (map i filter) ale juz nie tak wydajną (iteracje po dwóch tablicach i rozpakowywanie tablicy w argumentach funkcji Math.max() co może przy duzych tablicach nie być lekką operacją) jak w przypadku rozwiązania nr 1 korzystającego z pętli for of (jedno przejście po tablicy i brak dodatkowych tablic i ich rozpakowywania). 

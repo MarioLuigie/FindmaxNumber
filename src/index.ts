@@ -13,7 +13,7 @@ const getItemsMaxNumber = (items: Types.Items): number => {
 			const match = name.match(re);
 
 			if (match) {
-				const number = Number(...match);
+				const number = Number(match[0]);
 				if (number > maxNumber) maxNumber = number;
 			}
 		}
