@@ -1,20 +1,22 @@
-**Zadanie JS – Znalezienie największej liczby**
+## Zadanie JS – Znalezienie największej liczby
 
 Projekt w JS z uzyciem TS w celu kontrolowania typów danych. W pierwszej kolejności generuję tablicę obiektów Item z losowymi liczbami w polu name zapisanymi jako typ string - zbudowanie danych do analizy w oparciu o klasę Item za pomocą funkcji seed(). Potem wyznaczam największą liczbę analizując zawattość tablicy zwracając ją jako typ number lub zwracając 0 jeśli żadna pozycja nie zawiera liczby.
 
-**Struktura projektu**
-.
-|- dist/ - kod js po kompilacji (tsc w oparciu o obiekt konfiguracyjny w tsconfig.json)
-|- lib/
-   |- types.ts - typy TypeScript: Item, Items 
-|─ vendors/
-   |- seed.ts - funkcja seed() generująca losowe obiekty Item w tablicy
-|─ index.ts - główny plik uruchamiający funkcję getItemsMaxNumber()
-|─ package.json
-|─ tsconfig.json
-|─ README.md
+## Struktura projektu
 
-**Pliki**
+- `/ZADANIE JS`
+  - `/dist` - skompilowany kod JavaScript (wynik `tsc`)
+  - `/lib` - logika typów i modeli
+    - `/types.ts` - typy TypeScript: `Item`, `Items`
+  - `/vendors` - pliki pomocnicze / generatory
+    - `/seed.ts` - funkcja `seed()` generująca losowe obiekty `Item` w tablicy
+  - `/index.ts` - główny plik uruchamiający funkcję `getItemsMaxNumber()`
+  - `/package.json`
+  - `/tsconfig.json`
+  - `/README.md`
+
+
+## Pliki
 
 - types.ts – typy TypeScript:
 
@@ -30,10 +32,10 @@ Projekt w JS z uzyciem TS w celu kontrolowania typów danych. W pierwszej kolejn
   2. wyciąga liczbę z pola name
   3. zwraca największą liczbę
 
-**Przykład użycia:**
+## Przykład użycia:
 console.log('Your max number from array:', getItemsMaxNumber(seed(5)));
 
-**Uruchomienie projektu**
+## Uruchomienie projektu
 
   1. zainstaluj Node.js 
   2. zainstaluj TypeScript:
@@ -45,7 +47,7 @@ console.log('Your max number from array:', getItemsMaxNumber(seed(5)));
 
 W konsoli/terminalu zobaczą państwo tablicę wygenerowanych obiektów oraz największą liczbę z klucza name spośród wygenerownych obiektów zawierających name.
 
-**Przykładowy wynik**
+## Przykładowy wynik
 
 Your array: [
 { name: 'item 23' },
