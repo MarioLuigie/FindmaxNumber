@@ -1,5 +1,5 @@
-import seed from './utils/seed';
 import * as Types from './lib/types';
+import seed from './utils/seed';
 
 const getItemsMaxNumber = (items: Types.Items): number => {
 	console.log('Your array:', items);
