@@ -6,7 +6,7 @@ Projekt w JS z uzyciem TS w celu kontrolowania typów danych. W pierwszej kolejn
 
 - `/ZADANIE JS`
   - `/dist` - skompilowany kod JavaScript (wynik z `tsc`)
-  - `src/` - kod źródłowy TypeScript
+  - `/src` - kod źródłowy TypeScript
     - `/lib` - logika typów i modeli
       - `/types.ts` - typy TypeScript: `Item`, `Items`
     - `/utils` - pliki pomocnicze / generatory
