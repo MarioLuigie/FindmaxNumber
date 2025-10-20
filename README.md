@@ -37,13 +37,13 @@ console.log('Your max number from array:', getItemsMaxNumber(seed(5)));
 
 ## Uruchomienie projektu
 
-  1. zainstaluj Node.js 
-  2. zainstaluj TypeScript:
-     npm install -g typescript
-  3. skompiluj TypeScript do JS:
-     tsc
-  4. uruchom projekt:
-     npm start: zgodnie z instrukcją script w package.json
+  1. Zainstaluj Node.js 
+  2. Zainstaluj TypeScript:
+     *npm install -g typescript*
+  3. Skompiluj TypeScript do JS:
+     *tsc*
+  4. Uruchom projekt:
+     *npm start*: zgodnie z instrukcją script w package.json
 
 W konsoli/terminalu zobaczą państwo tablicę wygenerowanych obiektów oraz największą liczbę z klucza name spośród wygenerownych obiektów zawierających name.
 
