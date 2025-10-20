@@ -28,9 +28,9 @@ Projekt w JS z uzyciem TS w celu kontrolowania typów danych. W pierwszej kolejn
 
 - index.ts – importuje seed i typy, zawiera funkcję getItemsMaxNumber(items: Items), która po wywołaniu:
 
-1. iteruje przez tablicę obiektów
-2. wyciąga liczbę z pola name
-3. zwraca największą liczbę
+  - iteruje przez tablicę obiektów
+  - wyciąga liczbę z pola name
+  - zwraca największą liczbę
 
 ## Przykład użycia:
 console.log('Your max number from array:', getItemsMaxNumber(seed(5)));
