@@ -49,11 +49,13 @@ W konsoli/terminalu zobaczą państwo tablicę wygenerowanych obiektów oraz naj
 
 ## Przykładowy wynik
 
-`Your array: [
+```
+Your array: [
 { name: 'item 23' },
 { name: 'item 7' },
 { name: 'item 89' },
 { name: 'item 12' },
 { name: 'item 56' }
-]`
-`Your max number from array: 89`
+]
+Your max number from array: 89
+```
