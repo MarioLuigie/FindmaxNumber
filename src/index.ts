@@ -1,4 +1,4 @@
-import seed from './vendors/seed';
+import seed from './utils/seed';
 import * as Types from './lib/types';
 
 const getItemsMaxNumber = (items: Types.Items): number => {
