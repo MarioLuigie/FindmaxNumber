@@ -5,10 +5,11 @@ const getItemsMaxNumber = (items: Types.Items): number => {
 	console.log('Your array:', items);
 
 	let maxNumber: number = 0;
+	const re = /\d+/;
 
 	if (items.length) {
 		for (const { name } of items) {
-			const match = name.match(/\d+/);
+			const match = name.match(re);
 
 			if (match) {
 				const number = Number(...match);
