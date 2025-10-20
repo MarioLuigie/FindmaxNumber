@@ -36,7 +36,7 @@ Projekt w JS z uzyciem TS w celu kontrolowania typów danych. W pierwszej kolejn
 console.log('Your max number from array:', getItemsMaxNumber(seed(5)));
 
 ## Uruchomienie projektu
-
+```
   1. Zainstaluj Node.js 
   2. Zainstaluj TypeScript:
      *npm install -g typescript*
@@ -44,6 +44,7 @@ console.log('Your max number from array:', getItemsMaxNumber(seed(5)));
      *tsc*
   4. Uruchom projekt:
      *npm start*: zgodnie z instrukcją script w package.json
+```
 
 W konsoli/terminalu zobaczą państwo tablicę wygenerowanych obiektów oraz największą liczbę z klucza name spośród wygenerownych obiektów zawierających name.
 
